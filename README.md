@@ -55,3 +55,21 @@ The classifier used is **Gaussian Naive Bayes**, chosen for its simplicity and p
 from sklearn.naive_bayes import GaussianNB
 model = GaussianNB()
 model.fit(x_train, y_train)
+📈 Model Evaluation
+The model is evaluated on a test set split (20%) using accuracy score:
+
+python
+Copy
+Edit
+from sklearn.metrics import accuracy_score
+accuracy_score(y_test, y_pred)  # ≈ 80.11%
+🎯 Accuracy Achieved: ~80.11%
+
+🛠 Tech Stack
+Python 3.x
+
+pandas
+
+scikit-learn
+
+Jupyter Notebook / Google Colab
